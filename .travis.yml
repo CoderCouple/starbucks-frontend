@@ -19,9 +19,7 @@ deploy:
   env: "StarbucksFrontend-env"
   bucket_name: "elasticbeanstalk-ap-south-1-500229388346"
   bucket_path: "starbucks-frontend"
-
-on:
-  branch: master
-access_key_id: $AWS_ACCESS_KEY
-secret_access_key:
-  secure: "$AWS_SECRET_KEY"
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  on:
+   branch: master
