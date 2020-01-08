@@ -9,7 +9,7 @@ FROM node:alpine as build
 WORKDIR /app/starbucks-frontend
 
 # copy the package.json
-COPY ./package.json ./
+COPY ./package*.json ./
 
 # install dependencies
 RUN npm install
@@ -23,6 +23,8 @@ CMD ["npm","run","build"]
 ############################# Stage 2 - Deployment ######################
 
 FROM nginx
+
+EXPOSE 80
 
 COPY --from=build /app/starbucks-frontend/build /usr/share/nginx/html
 
