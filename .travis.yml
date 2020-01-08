@@ -8,3 +8,19 @@ before_install:
 
 script:
   - docker run -e CI=true sunil28/starbucks-frontend npm run test
+
+#starbucks-frontend.ap-south-1.elasticbeanstalk.com
+
+deploy:
+  edge: true
+  provider: elasticbeanstalk
+  region: "ap-south-1"
+  app: "starbucks-frontend"
+  env: "StarbucksFrontend-env"
+  bucket_name: "elasticbeanstalk-ap-south-1-500229388346"
+  bucket_path: "starbucks-frontend"
+
+on:
+  branch: master
+access_key_id: $AWS_ACCESS_KEY
+secret_access_key: $AWS_SECRET_KEY
