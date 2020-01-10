@@ -11,6 +11,7 @@ script:
 
 #starbucks-frontend.ap-south-1.elasticbeanstalk.com
 
+
 deploy:
   edge: true
   provider: elasticbeanstalk
