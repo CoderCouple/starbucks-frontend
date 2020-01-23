@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). [![Build Status](https://travis-ci.org/CoderCouple/starbucks-frontend.svg?branch=master)](https://travis-ci.org/CoderCouple/starbucks-frontend)
+<br /> 
 
 ## Available Scripts
 
